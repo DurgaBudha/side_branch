@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int m,a;
+	float p,t,r,si,usd,nrs;
+		printf("\t\t\t\t\ MENU\t\t\t");
+	printf("\n\t\t\t 1.Calculate simple interest\t\t\t");
+	("\n\t\t\t 2.Convert dollar to nepali\t\t\t");
+	printf("\n\t\t\t 3.Check even number or odd number\t\t\t");
+	printf("\n\t\t\t 4.Exit\t\t\t");
+	printf("\n\t\t\tPlease enetr number between 1 to 4\t\t\t");
+	scanf("%d",&m);
+	switch(m)
+	{
+		case 1:
+			printf("enter p,t,r\n");
+			scanf("%f %f %f",&p,&t,&r);
+			si=(p*t*r)/100;
+			printf("simple interest is %f",si);
+			break;
+		case 2:
+			printf("enter dollar amount\n");
+			scanf("%f",&usd);
+			nrs=130*usd;
+			printf("%f usd=%f nrs",usd,nrs);
+			break;
+		case 3:
+			printf("enter number ");
+			scanf("%d",&a);
+			if(a%2==0)
+			   printf("number is even ");
+			else
+			   printf("number is odd");
+			break; 
+		case 4:
+	       	printf("thank you");
+		    exit(m);
+		default:
+			printf(" Invalid input.Please enetr number betweem 1 to 4 ");
+			
+			    
+	}
+	return 0;
+}
